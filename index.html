@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Soy Pi</title>
+	<meta name="description" content="A PLACE FOR FWIENDS" />
+	<meta property="og:og:title" content="MYSPACE"/>
+	<meta property="og:determiner" content="MY"/>	
+	<meta property="og:type" content="website"/>
+	<meta property="og:description" content="A PLACE FOR FWIENDS"/>
+	<meta property="og:image" content="/img/pi-avatar.png">
+	<meta property="og:url" content="https://myspace.windows93.net/?id=1">
+	<meta property="og:site_name" content="magnetico PI"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="icoicocaballito.ico">
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div id="container">	<script>
+		function timeConverter(t) {     
+		    //var a = new Date(t * 1000);
+		    var a = new Date(parseInt(t));
+		    var today = new Date();
+		    var yesterday = new Date(Date.now() - 86400000);
+		    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+		    var year = a.getFullYear();
+		    var month = months[a.getMonth()];
+		    var date = a.getDate();
+		    var hour = a.getHours();
+		    if (hour<10) {hour='0'+hour};
+		    var min = a.getMinutes();
+		    if (min<10) {min='0'+min};
+		    if (a.setHours(0,0,0,0) == today.setHours(0,0,0,0))
+		        return 'Today, ' + hour + ':' + min;
+		    else if (a.setHours(0,0,0,0) == yesterday.setHours(0,0,0,0))
+		        return 'Yesterday, ' + hour + ':' + min;
+		    else if (year == today.getFullYear())
+		        return date + ' ' + month + ', ' + hour + ':' + min;
+		    else
+		        return date + ' ' + month + ' ' + year + ', ' + hour + ':' + min;
+		}
+		function addStyleString(str) {
+		    var node = document.createElement('style');
+		    node.innerHTML = str;
+		    document.body.appendChild(node);
+		}	
+	</script>
+		<style></style>
+	<style>
+		#header{all: unset;font-family: Arial;font-size: 15px;background: #003399;color: #fff;position: fixed;width: calc( 100% - 15px );height: 22px;padding: 5px;left: 0px;top: 0px;margin-bottom: 40px;border-bottom: 1px solid black;padding-left: 10px;padding-top: 6px;overflow: hidden;z-index: 300;}
+		#hSub { all: unset; font-family: Arial;font-size: 15px;background: #6699cc;font-size: small;margin: 0px;padding: 5px; padding-top: 5px; padding-left: 5px;padding-left: 10px;padding-top: 4px;position: fixed;left: 0;top: 34px;width: calc(100% - 15px );color: #000;height: 15px;z-index: 300;}
+		@media only screen and (max-width:768px){#header{height:51px}#hSub{top:63px}#hUp{float:left;left:0;font-size:small;position:fixed;top:35px}.sep{display:none}.topLeft{margin-top:30px}}
+	</style>
+	<div id="header">
+	<a class="logo" href="/index.html" style=""><b><span style="padding-top: 1px; position: absolute;"></span></b></a>
+	<img src="https://i.ibb.co/RvC0HKr/logo-header.png" width="136px" height="22px">
+    	</div>
+	<div id="hSub">
+		<a href="/index.html"> Inicio </a>  | <a href="http://google.com">En línea</a> | <a href="https://linktr.ee/magneticopi"> Música </a> <span class="sep">| <a href="https://www.tumblr.com/blog/view/elpibedelos80"> Blog </a> </span> 
+    
+	</div>	<div class="topLeft">
+		<div class="yosoypi"><img src="https://i.ibb.co/RzR5QW3/yosoypi.png" width="200px" height="45px"></div>
+		<table class="short">
+			<tr>	
+				<td>
+					<img src="img/pi-avatar.png"  class="avatar" id="avatar"
+                     alt="No Image Found">
+						
+				</td>
+				<td class="shortRight">
+					<div>"<span id="credo">:-)</span>"</div><br>
+					<div id="gender">Chico</div>
+					<div><span id="age">24</span> años</div>
+					<div id="country">Merlo<br>Buenos Aires<br>Argentina</div>
+					<div id="online" style="display:none;margin-top:10px;"><a href="https://i.ibb.co/Prj8LzV/online.gif" ></div>
+					<div style="font-size:small;margin-top:10px;">Último inicio:<br><span id="lastLogin">1624103118000</span></div>
+				</td>
+
+			</tr>
+		</table>
+		
+		<div class="boxInfo box">
+			<div class="boxHead"><b>Contactar a <span class="uName">Pi</span></b></div>
+			<a href="https://instagram.com/magnetico.pi"><div class="boxButton" id="sMsg">Enviar mensaje</div></a>
+			<a href="https://www.facebook.com/noveltytracks"><div class="boxButton" id="report">Reportar</div></a>
+			<a href="https://www.facebook.com/noveltytracks1"><div class="boxButton" id="add">Agregar a Amigos</div></a>
+			<a href="https://instagram.com/magnetico.pi"><div class="boxButton" id="block">Bloquear</div></a>
+		</div>
+		<div class="url box">
+			<div><b>Instagram URL:</b></div>
+			<div><a style='color:#000;text-decoration:none;' href='https://instagram.com/magnetico.pi'>https://instagram.com/magnetico.pi</a></div>
+		</div>
+		<div class="player box"><div class="songName"><b>Song:</b> <span class="songTitle">magnetico PI - 80s Americano Dance (2018)
+</span><a href="img/80samericano.mp3" download="img/80samericano.mp3" type="audio/mp3">
+<img style="height: 15px; float: right; padding-right: 2px;" 
+src="https://myspace.windows93.net/img/download.svg">
+</a></div><audio controls autoplay src="img/80samericano.mp3" 
+ controlsList="nodownload" type="audio/mp3"></audio></div>	
+	</div>
+	<div class="topRight">
+
+	<div class="gifviola">
+	<img src="https://web.archive.org/web/20090727184822im_/http://www.geocities.com/eugenio_music/Guitar_notes.gif">
+		<img src="https://web.archive.org/web/20091022055214im_/http://geocities.com/sweetssm/pinkmusicbar.gif">
+			<img src="https://web.archive.org/web/20090727184822im_/http://www.geocities.com/eugenio_music/Guitar_notes.gif">
+			</div>
+			
+
+
+		<div class="extended box"><h3><span class="uName">Pi</span> está cerca tuyo </h3></div>
+				<div class="box blurbs">
+
+		<img src="https://web.archive.org/web/20091025205814im_/http://www.geocities.com/stefansksk/lysstrib.gif">
+
+		<div class='blogs'><div><b>Últimas entradas</b></div><div> 😎 Se vienen cositas nuevas! 😎 </div></div>	
+
+				<div class="contador"> <img src="https://web.archive.org/web/20091027105900if_/http://geocities.com/sfumodule/picsray/counter5.gif"> </div>
+
+		<img src="https://web.archive.org/web/20091025205814im_/http://www.geocities.com/stefansksk/lysstrib.gif">
+
+	
+			<div class="rightHead"><b><span class="uName"> ¿Qué </span> se viene? </b></div>
+			<h4>Lo nuevo:</h4>
+
+		<div class="notecaigo">	
+		<div> <b> "NO TE CAIGO BIEN" ¡El nuevo single de Pi estará disponible el 3 de octubre en Youtube y todas las plataformas digitales! </b> </div>
+
+
+			<div class="fotonotecaigo"><p><a href="https://i.ibb.co/0fHckqZ/notecaigo1.jpg">https://i.ibb.co/0fHckqZ/notecaigo1.jpg</a></p></div>
+
+		</div>
+		 
+		<div class="box-fwiends">
+			<div class="rightHead"><b><span class="uName"> Lanzamientos </span> oficiales</b></div>
+			<div class="fwiendCounter"><b><span class="uName"> Pi </span> tiene <span class="fwiendCount"> 4</span> lanzamientos oficiales.
+			 Entre los que se destacan 3 EP: Día de la Primavera (2016), Neoliberalismo Emocional (2017) y Magnético (2019).
+			 Por otra parte en 2021 salió el single PERDON X GHOSTEARTE, que da comienzo a una nueva etapa en la carrera de Pi. </b></div>	
+			<div id="top">
+			<a href="https://open.spotify.com/album/5IqCaBtLdJ1Ytj01UCGbPK"><div class="fwiendFace"><b>Día de la Primavera (2016)</b><img src="https://i.ibb.co/R00Dmbx/cover.png"></div></a>
+			<a href="https://open.spotify.com/album/1b7bLVx1xR7XwJsfEGZ2TJ"><div class="fwiendFace"><b>Neoliberalismo Emocional (2017)</b><img src="https://i.ibb.co/HNtgXXb/cover.jpg"></div></a>
+			<a href="https://open.spotify.com/album/7n5pvEOk0pJljDZi73bsee"><div class="fwiendFace"><b>Magnético (2019)</b><img src="https://i.ibb.co/bQFKH1R/a1371290866-10.jpg"></div></a>
+			<a href="https://magneticopi.bandcamp.com/track/perdon-x-ghostearte"><div class="fwiendFace"><b>PERDON X GHOSTEARTE (2021)</b><img src="https://i.ibb.co/2vWJsGh/a1539857670-10.jpg"></div></a>
+			<img src="https://www.pngkey.com/png/full/48-481779_previous-logo-spotify-logo-evolution.png" width="100px" height="40px">
+			
+
+			</div>
+			<div id="viewFriends"><b>Ver perfil de <a href="https://open.spotify.com/artist/6cWfikf825BSjMgaal1Blf">Spotify</a> </b></div>
+		</div>
+		<div class="rightHead"><b><span class="uName"> Lanzamientos </span> no oficiales </b></div>
+		<div class="fwiendCounter"><b><span class="uName"> Pi </span> tiene <span class="fwiendCount"> 2</span> EP no oficiales que
+		incluyen su primer demo grabado en 2015 y por otro lado unos B-sides y outtakes compilados en otro EP. Asímismo también hay
+		muchas canciones sueltas que lamentablemente solo quedaron en la nube de soundcloud. </b></div>
+
+			 <a href="https://soundcloud.com/magneticopi/sets/temprano-ep"><div class="fwiendFace"><b>Temprano EP (2015)</b><img src="https://i.ibb.co/W5rzFVq/temprano.jpg"></div></a>
+			 <a href="https://magneticopi.bandcamp.com/album/la-merienda-invertida-demos-y-b-sides"><div class="fwiendFace"><b>La Merienda Invertida (2019)</b><img src="https://i.ibb.co/hmfq90X/cover.jpg"></div></a>
+
+
+			 <div id="viewFriends"><b>Ver perfil de <a href="https://soundcloud.com/magneticopi">Soundcloud</a> </b></div>
+
+
+
+		<div class="rightHead"><b><span class="uName"> Videos </span> de pi </b></div>
+				<div class="fwiendCounter"><b><span class="uName"> Existen hasta ahora tres videoclips oficiales: </b></div>
+				<img src="https://web.archive.org/web/20091028081656im_/http://www.geocities.com/droombaby/video_camera_turn_md_clr.gif">
+			    <img src="https://web.archive.org/web/20091028081656im_/http://www.geocities.com/droombaby/video_camera_turn_md_clr.gif">
+				<img src="https://web.archive.org/web/20091028081656im_/http://www.geocities.com/droombaby/video_camera_turn_md_clr.gif">
+
+					 </div><div class="boxHead"><b>PERDON X GHOSTEARTE (2021) </b></div>
+					 <iframe width="560" height="315" src="https://www.youtube.com/embed/sGmPgSahifk" title="YouTube video player"
+					  frameborder="8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					   allowfullscreen></iframe>
+					   
+
+					<div class="boxHead"><b>magnetico (2019) </b></div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/-AY81UtVx90" title="YouTube video player" 
+					frameborder="8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen></iframe>
+
+					<div class="boxHead"><b>madrigal (2016) </b></div>
+                    <div class="juegoysonrisa"><iframe width="560" height="315" src="https://www.youtube.com/embed/rWySBb6VP-g" title="YouTube video player" 
+                    frameborder="8" margin-bottom="15px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe> </div>
+
+
+					<div class="rightHead"><b><span class="uName"> Un juego y una sonrisa </b></div>
+					<div class="juegoysonrisa">
+					<b> A continuación les ofrezco la posibilidad de jugar en esta web, a algún juego que me haya
+					hecho feliz durante muchos años. En esta oportunidad les traigo la versión de Mortal Kombat 3 
+					de la Sega Genesis </b> </div>
+
+					<iframe src="https://archive.org/embed/arcade_mk3mdb" width="540" height="420" 
+					frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+					   
+
+
+
+		<div class="boxcomments">		
+			
+			<div class="rightHead"><b><span class="uName"> Comentarios </b></div>	
+
+			<table id="userWall">
+				<tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85677"><div><b>gatotaringuero</b></div><img src="https://myspace.windows93.net/u/85677/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624952675000 </b></div>
+				<div><p>Jajaja</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85676"><div><b>elmasporonga</b></div><img src="https://myspace.windows93.net/u/85676/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624948382000 </b></div><div><p>no me gusta tu musica ¯\_(ツ)_/¯</p></div></td></tr><tr><td class="tableLeft">
+				<a href="https://myspace.windows93.net/?id=8775"><div><b>lamoscatsetse</b></div><img src="https://video-images.vice.com/articles/57db06e73116a77efa57edc5/lede/La-mosca-tse-tse.jpeg?crop=0.7046511627906977xw:1xh;0.1907744411831113xw,0xh"></a></td><td class="tableRight"><div><b class="date">1624940618000 </b></div><div><p>bien pipín</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85664">
+				<div><b>Okupas2001</b></div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Okupas_%28miniserie%29.jpg/245px-Okupas_%28miniserie%29.jpg"></a></td><td class="tableRight"><div><b class="date">1624936662000 </b></div>
+				<div><p>TE KIEROOOO.</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85658"><div><b>DanyCaliente</b></div>
+				<img src="https://myspace.windows93.net/u/85658/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624930933000 </b></div>
+				<div><p>hace mas videos culiao </p></div></td></tr><tr><td class="tableLeft">
+				<a href="https://myspace.windows93.net/?id=85656"><div><b>lucianocastro</b></div>
+				<img src="https://pbs.twimg.com/profile_images/3309328465/4d43ce69739fa63a5e3414b8f98d80e9.jpeg"></a></td><td class="tableRight"><div><b class="date">1624927551000 </b></div>
+				<div><p>te espero para boxear pi </p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85655"><div><b>rulitos1986</b>
+				<div><img src="https://myspace.windows93.net/u/85655/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624927363000 </b></div><div><p>gracias x tanto</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=1496">
+				<div><b>tu vieja</b></div><img src="https://myspace.windows93.net/u/1496/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624926923000 </b></div><div><p>Hijo veni a comer</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85572">
+				<div><b>sluggy</b></div><img src="https://myspace.windows93.net/u/85572/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624911299000 </b></div><div><p>daddy</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85560">
+				<div><b>22orchards</b></div><img src="https://myspace.windows93.net/u/85560/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624905518000 </b></div><div><p>pi(cante)</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=43285">
+				<div><b>javier milei</b></div><img src="https://www.cronista.com/files/image/344/344256/61017170cbc90_720_960!.jpg?s=416a1e8a43a9be5f47377d70fd9a5c57&d=1627485649"></a></td><td class="tableRight"><div><b class="date">1624905472000 </b></div><div><p>zurdito empobrecedor</p></div></td></tr><tr><td class="tableLeft">
+				<a href="https://myspace.windows93.net/?id=85434"> <div><b>piñon fijo</b></div><img src="https://i.ibb.co/brWGmyx/bbbbb.jpg"></a></td><td class="tableRight"><div><b class="date">1624903054000 </b></div><div><p>buen video me has hecho</p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=56499">
+				<div><b>ericlosada</b></div><img src="https://myspace.windows93.net/u/56499/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624901518000 </b></div><div><p>me gustabas mas sin autotune </p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=85613">
+				<div><b>El Más Bostero Jaja </b></div><img src="https://i.ibb.co/gTWdw96/voxa.jpg"></a></td><td class="tableRight">
+				<div><b class="date">1624895697000 </b></div><div><p>Hola amigo te espero en el chatroom a las 9 ;) </p></div></td></tr> <tr><td class="tableLeft"><a href="https://i.ibb.co/LxYq6sF/numetal.jpg"><div><b>limpbizkit01</b></div><img src="https://i.ibb.co/LxYq6sF/numetal.jpg"></a></td><td class="tableRight">
+				<div><b class="date">1624850301000 </b></div>
+				<div><p>sale un counter?? xD </p></div></td></tr><tr><td class="tableLeft"><a href="https://myspace.windows93.net/?id=19243">
+				<div><b>ladyponcho</b></div><img src="https://myspace.windows93.net/u/19243/avatar.jpg"></a></td><td class="tableRight"><div><b class="date">1624844665000 </b></div><div><p>piiiiiiiiiii</p></div>
+				
+				</div>
+				</table>
+				
+			<div style="font-size:small;text-align:right;">(17/17)</div>	
+
+
+			
+
+	<div id="imgPreview"><img src=""></div>
+	<div id="footer" class="box">
+</div>
+
+
+			<div class="pito">
+	<p>
+
+	<br>&copy; 1997-2021 © <div class="novelty"> <img src="https://i.ibb.co/hm4GZNT/noveltypng-vector.png" height="20px" width="70px"> </div>
+	</p>
+
+</div> 
+
+<img src="https://web.archive.org/web/20091027004343im_/http://uk.geocities.com/beardsleyweb/videogames_banner1.gif">
+
+<div>	<script>
+		$( ".date" ).each(function( index ) {
+			var time =  timeConverter($( this ).text())
+		 	$( this ).text(time)
+		});
+		var time = Date.now()-parseInt($('#lastLogin').text())
+		if(time<900000||1==1){
+			$('#online').show()
+		}
+		var time = new Date( parseInt($('#lastLogin').text()) )
+		var d = time.getDate();if (d<10) {d="0"+d};		
+		var m = time.getMonth()+1;if (m<10) {m="0"+m};
+		var y = time.getFullYear();
+		$('#lastLogin').text(	d+'/'+m+'/'+y	); 	</script>
+	<script type="text/javascript" src="index.js"></script>
+	</div>
+
+
+<p>
+						<img src="https://i.ibb.co/4N1XsnV/Apprehensive-Rash-Avians-size-restricted.gif"  class="footer1" id="footer1"
+                     alt="No Image Found">
+						<img src="https://web.archive.org/web/20091021213620if_/http://www.geocities.com/moanacnet/internetexporgif.gif"
+						  class="footer1" id="footer1"
+                     alt="No Image Found">
+
+					 
+						</p>
+
+
+
+
+</body>
+</html>
